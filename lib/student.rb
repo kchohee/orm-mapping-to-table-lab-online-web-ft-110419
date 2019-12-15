@@ -7,7 +7,7 @@ class Student
     @id = id
   end
   def self.create_tables
-    sql = <<- SQl 
+    sql = <<- SQl
       CREATE TABLE IF NOT EXISTS songs (
       id INTEGER PRIMARY KEY,
       name TEXT,
@@ -16,5 +16,5 @@ class Student
       SQl
     DB[:conn].execute(sql)
   end
-    
+
 end
