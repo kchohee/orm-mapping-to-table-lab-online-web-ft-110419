@@ -13,7 +13,7 @@ class Student
       name TEXT,
       album TEXT,
       )
-      SQl
+      SQL
     DB[:conn].execute(sql)
   end
 
