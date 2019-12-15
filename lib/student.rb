@@ -6,15 +6,15 @@ class Student
     @grade = grade
     @id = id
   end
-  def self.create_tables
-    sql = <<- SQl
-      CREATE TABLE IF NOT EXISTS students (
-      id INTEGER PRIMARY KEY,
-      name TEXT,
-      album TEXT,
-      )
-      SQL
-    DB[:conn].execute(sql)
+  def self.create_table
+    sql =  <<-SQL 
+      CREATE TABLE IF NOT EXISTS songs (
+        id INTEGER PRIMARY KEY, 
+        name TEXT, 
+        album TEXT
+        )
+        SQL
+    DB[:conn].execute(sql) 
   end
 
 end
